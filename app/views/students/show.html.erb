@@ -1,0 +1,17 @@
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1><%= @student.name %></h1>
+        <div>
+          <h3> Enrolled in <%= @courses.name %> </h3>
+        </div>
+        <div>
+          <strong>Email</strong>: <%= @student.email %>
+        </div>
+        <a href="/students/<%= @student.id %>/edit">Edit</a> |
+        <a href="/students/<%= @student.id %>/destroy">Destroy</a>
+    </div>
+  </div>
+
+  

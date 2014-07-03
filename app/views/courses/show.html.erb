@@ -1,0 +1,17 @@
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1><%= @course.name %></h1>
+        <h4><a href="/courses/<%= @course.id %>/edit">Edit</a> |
+<a href="/courses/<%= @course.id %>/destroy">Destroy</a> </h4>
+        
+        <div class="list-group">
+          <% @students.each do |student| %>
+          <a href="/students/<%= student.id %>" class="list-group-item ">
+            <h4 class="list-group-item-heading"><%= student.name %></h4>  
+          </a>
+          <% end %>
+      </div>
+    </div>
+  </div>
